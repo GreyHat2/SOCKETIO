@@ -3,7 +3,7 @@ from flask_socketio import SocketIO, join_room, leave_room, emit
 from flask_session import Session
 
 app = Flask(__name__)
-app.debug = True
+app.debug = False
 app.config['SECRET_KEY'] = 'secret'
 app.config['SESSION_TYPE'] = 'filesystem'
 
@@ -56,4 +56,4 @@ def left(message):
 
 
 if __name__ == '__main__':
-    socketio.run(app)
+    socketio.run(app, port=server_port, host='0.0.0.0')
