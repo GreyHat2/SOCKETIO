@@ -43,8 +43,8 @@
   <body class="text-center">
     
     <div class="chatwindow">
-      <h2>Tech Talk</h2>
-      <h2>Room : {{session['room']}}</h2><br>
+      <h2 class="fw-bolder" >Tech Talk</h2>
+      <h2 class="fst-italic">You have joined room {{session['room']}}</h2><br>
       <textarea class="form-control" id="chat" cols="65" rows="10" placeholder="No messages yet. Start one..." readonly></textarea><br>
       <input class="form-control" type="text" id="text" size="51" placeholder="Enter your message here" /><br>
       <button type="button" id="send" class="btn btn-primary">Send</button><br><br>
